@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING SYSTEM</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .header{
+            height:70px;
+            width:100%;
+            background-color: rgb(84, 95, 238);
+            line-height: 70px;
+            
+        }
+        h1{ margin-left:5%;
+            color:rgba(255, 255, 224, 0.918);
+            display: inline-block;
+            width:30%;
+            vertical-align: top;
+        }
+        .search{
+            height: 70px;
+            width:60%;
+            /* background-color: red; */
+            display:inline-block;
+        }
+        .search input{
+            height:40px;
+            width:50%;
+            text-indent:20px;
+            border-radius: 5px;
+            border:1px solid gray;
+            outline: none;
+        }
+        .sear{
+            height: 70px;
+            width:20%;
+            /* background-color: red; */
+            display:inline-block;
+            
+            }
+            .sear input{
+            height:40px;
+            width:100%;
+            text-indent:20px;
+            border-radius: 5px;
+            border:1px solid gray;
+            outline: none;
+        }
+        .sea{
+            height: 70px;
+            width:12%;
+            /* background-color: red; */
+            display:inline-block;
+            margin-left:5px;
+            justify-content:space-around  ;
+            position:absolute;
+            top:0;
+            }
+            .sea input{
+            height:40px;
+            width:100%;
+            text-indent:20px;
+            border-radius: 5px;
+            border:1px solid gray;
+            outline: none;
+            
+        }
+
+        .products{
+            width:100%;
+            height: auto;
+            background-color: rgba(250, 240, 230, 1);
+           
+        
+        }
+        .productwrapper{
+            height:auto;
+            width:80%;
+             /* background-color:paleturquoise;  */
+            margin-left:10%;
+            margin-bottom:50px;
+           
+            
+           
+        }
+        .product{
+            height:auto;
+            width:25%;
+            background-color: rgb(184, 196, 192);
+            display: inline-block;
+            margin-top:25px;
+            margin-left:6%;
+            box-shadow: 0 0 20px navy;
+        
+           
+        }
+        .prodimg{
+            height:300px;
+            width:100%;
+            background-color: yellow;
+            overflow:hidden
+            
+        }
+        .product h3 , .product p {
+            padding:5px;
+            padding-left:10px;
+        }
+        .product p{
+            color:rgb(3, 35, 36);
+        }
+        .button{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="header">
+       <h1>Shopping Center</h1>
+       <div class="search">
+           <input type="search" placeholder="Search For Products" 
+            onkeyup="searchProduct(this.value)"/>
+            <div class="sear"> <input type="number" onkeyup="searchMax()" id="min"placeholder="Min"/>
+                </div>
+                <div class="sea"> <input type="number"  onkeyup="searchMax()"id="max" placeholder="Max"/></div>
+           
+       </div>
+       <!-- <div class="sear"> <input type="number" placeholder="Max"/></div> -->
+   </div>
+
+   <div class="products">
+        <div class="productwrapper" id="productwrapper">
+             <!-- <div class="product">
+                 <div class="prodimg">
+                    <img src="C:\Users\User\Pictures\products\product3.jpeg.jpg" width="100%" />
+                  </div>
+                  <h3>Blazzer</h3>
+                  <p>price:1500</p>
+                  <p>Size:L</p>
+                  <p>Color:Black & White</p>
+                  <p>Just like that</p>
+                  <p>
+                      <button>Add To Cart</button>
+                  </p>
+             </div> -->
+         </div>
+     </div>
+  
+     
+     <div class="products">
+         <h2>Cart</h2><p><input type="number" id="count"/></p>
+         <div class="productwrapper" id="cart"></div>
+     </div>
+   
+   <script src="Ecommerceprto1.js"></script> 
+</body>
+</html>
